@@ -63,7 +63,7 @@ void ADS1248_GPIO_Init(void){
   ADS1248_DISABLE();
 	ADS1248_START_H();
 	ADS1248_RST_H();
-	Delay20ms(); 
+	Delay10ms(); 
 }
 
 void ADS1248_SPI_Init(void){
@@ -76,7 +76,7 @@ void ADS1248_SPI_Init(void){
   SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
   SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
   SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
+  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_128;
   SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
   SPI_InitStructure.SPI_CRCPolynomial = 7;
   SPI_Init(SPI_ADS1248, &SPI_InitStructure);
@@ -140,6 +140,7 @@ void ADS1248ReadRegister(int StartAddress, int NumRegs, unsigned * pData)
 	{
 		*pData++ = ADS1248_SPI_SendByte(0xFF);
 	} 
+//ADS1248_SPI_SendByte(0xFF);	
 	//ADS1248_START_L();
 	ADS1248_DISABLE(); 
 	
@@ -159,8 +160,8 @@ void ADS1248WriteRegister(int StartAddress, int NumRegs, unsigned * pData){
 	{
 		ADS1248_SPI_SendByte(*pData++);
 	} 
-	//ADS1248_START_L(); 
 	ADS1248_DISABLE();
+	//ADS1248_START_L();
 }
  
 void ADS1248WriteSequence(int StartAddress, int NumReg, unsigned * pData){
@@ -1011,15 +1012,16 @@ int ADS1248RDATARead(void)		// reads data directly based on RDATAC mode (writes 
 	// assert CS to start transfer 
 	ADS1248_ENABLE();  
 	ADS1248_START_H(); 
-	//__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();
-	//ADS1248_START_L(); 
+	__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();
+	ADS1248_START_L(); 
   //Delay200us();Delay200us();Delay200us();	
-	while (0 == IS_ADS1248_READY()){}
-	//ADS1248WaitForDataReady (0);
+	//while (0 == IS_ADS1248_READY()){}
+	ADS1248WaitForDataReady (0);
 	// get the conversion result
 	data = ADS1248_SPI_SendByte(0xFF);
 	data = (data << 8) | ADS1248_SPI_SendByte(0xFF);
 	data = (data << 8) | ADS1248_SPI_SendByte(0xFF);
+//ADS1248_SPI_SendByte(0xFF);		
 	// sign extend data if the MSB is high (24 to 32 bit sign extension)
 	if (data & 0x800000)
 		data |= 0xff000000;
