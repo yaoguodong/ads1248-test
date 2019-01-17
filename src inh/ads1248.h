@@ -394,4 +394,6 @@ void Delay10us(void);
 void Delay200us(void);
 void Delay10ms(void);
 void Delay20ms(void);
+
+unsigned char Ads_Calibrate(unsigned int Gain);
 #endif

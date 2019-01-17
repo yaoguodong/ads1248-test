@@ -10,12 +10,12 @@
       <TargetName>ads1248</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
+      <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32L151RE</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L1xx_DFP.1.2.0</PackID>
+          <PackID>Keil.STM32L1xx_DFP.1.0.2</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x14000) IROM(0x08000000,0x80000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -330,7 +330,6 @@
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32L1XX_HD</Define>
@@ -348,7 +347,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -433,7 +431,6 @@
                     <vShortWch>2</vShortWch>
                     <v6Lto>2</v6Lto>
                     <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
                     <VariousControls>
                       <MiscControls></MiscControls>
                       <Define></Define>
@@ -499,23 +496,23 @@
     </components>
     <files>
       <file attr="config" category="source" condition="Compiler ARMCC" name="Device\Source\ARM\startup_stm32l151xe.s" version="0.0.0">
-        <instance index="0">RTE\Device\STM32L151RE\startup_stm32l151xe.s</instance>
+        <instance index="0" removed="1">RTE\Device\STM32L151RE\startup_stm32l151xe.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.0.0" condition="STM32L151xE CMSIS"/>
         <package name="STM32L1xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.2.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" condition="STM32L1_XL" name="Device\Source\ARM\startup_stm32l1xx_xl.s" version="1.0.0">
+        <instance index="0">RTE\Device\STM32L151RE\startup_stm32l1xx_xl.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32L1 CMSIS Device"/>
+        <package name="STM32L1xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.2"/>
         <targetInfos>
           <targetInfo name="ads1248"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" condition="STM32L1_XL" name="Device\Source\ARM\startup_stm32l1xx_xl.s" version="1.0.0">
-        <instance index="0" removed="1">RTE\Device\STM32L151RE\startup_stm32l1xx_xl.s</instance>
+      <file attr="config" category="source" condition="STM32L1" name="Device\Source\system_stm32l1xx.c" version="1.0.0">
+        <instance index="0">RTE\Device\STM32L151RE\system_stm32l1xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32L1 CMSIS Device"/>
         <package name="STM32L1xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.2"/>
-        <targetInfos/>
-      </file>
-      <file attr="config" category="source" name="Device\Source\system_stm32l1xx.c" version="1.0.0">
-        <instance index="0">RTE\Device\STM32L151RE\system_stm32l1xx.c</instance>
-        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.0.0" condition="STM32L151xE CMSIS"/>
-        <package name="STM32L1xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.2.0"/>
         <targetInfos>
           <targetInfo name="ads1248"/>
         </targetInfos>

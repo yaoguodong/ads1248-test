@@ -1,5 +1,5 @@
 #include "ads1248.h"
- 
+#include "delay.h"
 
  
 void ADS1248_GPIO_Init(void){
@@ -63,6 +63,10 @@ void ADS1248_GPIO_Init(void){
   ADS1248_DISABLE();
 	ADS1248_START_H();
 	ADS1248_RST_H();
+	Delay10ms();  
+	ADS1248_RST_L();
+	Delay10ms();  
+	ADS1248_RST_H();
 	Delay10ms(); 
 }
 
@@ -76,7 +80,7 @@ void ADS1248_SPI_Init(void){
   SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
   SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
   SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_128;
+  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;
   SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
   SPI_InitStructure.SPI_CRCPolynomial = 7;
   SPI_Init(SPI_ADS1248, &SPI_InitStructure);
@@ -140,7 +144,6 @@ void ADS1248ReadRegister(int StartAddress, int NumRegs, unsigned * pData)
 	{
 		*pData++ = ADS1248_SPI_SendByte(0xFF);
 	} 
-//ADS1248_SPI_SendByte(0xFF);	
 	//ADS1248_START_L();
 	ADS1248_DISABLE(); 
 	
@@ -160,8 +163,8 @@ void ADS1248WriteRegister(int StartAddress, int NumRegs, unsigned * pData){
 	{
 		ADS1248_SPI_SendByte(*pData++);
 	} 
+	//ADS1248_START_L(); 
 	ADS1248_DISABLE();
-	//ADS1248_START_L();
 }
  
 void ADS1248WriteSequence(int StartAddress, int NumReg, unsigned * pData){
@@ -1010,18 +1013,17 @@ int ADS1248RDATARead(void)		// reads data directly based on RDATAC mode (writes 
 {
 	static int data;
 	// assert CS to start transfer 
+	Delay1us();Delay1us();Delay1us();Delay1us();Delay1us();
 	ADS1248_ENABLE();  
 	ADS1248_START_H(); 
-	__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();__nop();
-	ADS1248_START_L(); 
-  //Delay200us();Delay200us();Delay200us();	
+	Delay1us();
+	ADS1248_START_L();  
 	//while (0 == IS_ADS1248_READY()){}
 	ADS1248WaitForDataReady (0);
 	// get the conversion result
 	data = ADS1248_SPI_SendByte(0xFF);
 	data = (data << 8) | ADS1248_SPI_SendByte(0xFF);
 	data = (data << 8) | ADS1248_SPI_SendByte(0xFF);
-//ADS1248_SPI_SendByte(0xFF);		
 	// sign extend data if the MSB is high (24 to 32 bit sign extension)
 	if (data & 0x800000)
 		data |= 0xff000000;
@@ -1055,4 +1057,40 @@ void Delay10ms(void){
 void Delay20ms(void){
 	volatile int i=71800;
 	while(i--);
+}
+
+unsigned char Ads_Calibrate(unsigned int Gain)
+{
+	  long ofc,fsc;
+    unsigned int R=0,Cmd;
+    //ADS1248WriteRegister(ADS1248_3_SYS0,1,&Gain);     //
+
+	  ofc = ADS1248GetOFC(); 
+	//	fsc =ADS1248GetFSC();
+	
+   /* Cmd=0x00;
+    ADS1248WriteRegister(ADS1248_2_MUX1,1,&Cmd);       //
+	  ADS1248_ENABLE();
+    ADS1248_SPI_SendByte(ADS1248_CMD_SELFOCAL);     //
+		ADS1248_DISABLE();
+    R|=ADS1248WaitForDataReady(0);                   //
+*/
+    Cmd=0x01;
+    ADS1248WriteRegister(ADS1248_2_MUX1,1,&Cmd);       //AINP+AINN=(AVDD+AVSS)/2
+    ADS1248_ENABLE();   
+		ADS1248_SPI_SendByte(ADS1248_CMD_SYSOCAL);      //
+		ADS1248_DISABLE();
+    R|=ADS1248WaitForDataReady(0);                   //
+
+    /*Cmd=0x02;
+    ADS1248WriteRegister(ADS1248_2_MUX1,1,&Cmd);       //AINP=VREF+,AINN=VREF-; for gain calibration
+		ADS1248_ENABLE();
+    ADS1248_SPI_SendByte(ADS1248_CMD_SYSGCAL);      //
+		ADS1248_DISABLE();
+    R|=ADS1248WaitForDataReady(0);
+*/
+		ofc = ADS1248GetOFC(); 
+	//	fsc =ADS1248GetFSC();
+
+    return R;
 }

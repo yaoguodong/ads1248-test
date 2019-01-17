@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\ads1248.o"
+".\objects\stm32l1xx_gpio.o"
+".\objects\stm32l1xx_spi.o"
+".\objects\stm32l1xx_pwr.o"
+".\objects\stm32l1xx_rcc.o"
+".\objects\startup_stm32l1xx_xl.o"
+".\objects\system_stm32l1xx.o"
+--strict --scatter ".\Objects\ads1248.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ads1248.map" -o .\Objects\ads1248.axf

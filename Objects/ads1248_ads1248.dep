@@ -1,0 +1,217 @@
+Dependencies for Project 'ads1248', Target 'ads1248': (DO NOT MODIFY !)
+F (.\src inh\main.c)(0x5BD04AF0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (src inh\main.h)(0x5BBC26A8)
+I (src inh\ads1248.h)(0x5BC458B8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+F (.\src inh\ads1248.c)(0x5BC691BC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\ads1248.o --omf_browse .\objects\ads1248.crf --depend .\objects\ads1248.d)
+I (src inh\ads1248.h)(0x5BC458B8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+I (src inh\delay.h)(0x5BBC26A8)
+F (.\src inh\delay.c)(0x5BBC26A8)()
+F (.\Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.c)(0x5BBC26A8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\stm32l1xx_gpio.o --omf_browse .\objects\stm32l1xx_gpio.crf --depend .\objects\stm32l1xx_gpio.d)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+F (.\Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.c)(0x5BBC26A8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\stm32l1xx_spi.o --omf_browse .\objects\stm32l1xx_spi.crf --depend .\objects\stm32l1xx_spi.d)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+F (.\Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.c)(0x5BBC26A8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\stm32l1xx_pwr.o --omf_browse .\objects\stm32l1xx_pwr.crf --depend .\objects\stm32l1xx_pwr.d)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+F (.\Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.c)(0x5BBC26A8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\stm32l1xx_rcc.o --omf_browse .\objects\stm32l1xx_rcc.crf --depend .\objects\stm32l1xx_rcc.d)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
+F (RTE\Device\STM32L151RE\startup_stm32l1xx_xl.s)(0x5BBC26A8)(--cpu Cortex-M3 -g --apcs=interwork -I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1" --pd "STM32L1XX_XL SETA 1"--list .\listings\startup_stm32l1xx_xl.lst --xref -o .\objects\startup_stm32l1xx_xl.o --depend .\objects\startup_stm32l1xx_xl.d)
+F (RTE\Device\STM32L151RE\system_stm32l1xx.c)(0x5BBC26A8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ".\src inh" -I .\Libraries\STM32L1xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\Device\ST\STM32L1xx\Include-I D:\GitHubRepository\ads1248-test\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32L1XX_XL -DUSE_STDPERIPH_DRIVER -DSTM32L1XX_HD-o .\objects\system_stm32l1xx.o --omf_browse .\objects\system_stm32l1xx.crf --depend .\objects\system_stm32l1xx.d)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\stm32l1xx.h)(0x5BBC26A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
+I (C:\Keil_MDK510\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (.\Libraries\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h)(0x5BBC26A8)
+I (.\src inh\stm32l1xx_conf.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_adc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_crc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_comp.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dac.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dbgmcu.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_dma.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_exti.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_flash.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_gpio.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_syscfg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_i2c.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_iwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_lcd.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_pwr.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rcc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_rtc.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_spi.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_tim.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_usart.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\stm32l1xx_wwdg.h)(0x5BBC26A8)
+I (.\Libraries\STM32L1xx_StdPeriph_Driver\inc\misc.h)(0x5BBC26A8)
